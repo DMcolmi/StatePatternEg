@@ -35,7 +35,7 @@ public class NoPatternGateStateService {
                 }else if (message == GO_THROUGH) {
                     gate.setGateState(Gate.GateStatus.CLOSE);
                     break;
-                }
+                } //V 1.0 -> da qui aggiungo nuovi requisiti per valutare facilità di modifica con o senza sate pattern
                 break;
             case CLOSE:
                 if(message == PAY_OK){
@@ -46,7 +46,7 @@ public class NoPatternGateStateService {
                     gate.setGateState(Gate.GateStatus.ELAB);
                 }else if (message == GO_THROUGH) {
                     break;
-                }
+                } //V 1.0 -> da qui aggiungo nuovi requisiti per valutare facilità di modifica con o senza sate pattern
                 break;
             default:
                 break;
